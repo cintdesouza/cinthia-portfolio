@@ -1,6 +1,4 @@
 import imgStyled from "../public/static/img/stack/styled.png";
-import imgPython from "../public/static/img/stack/python.png";
-import imgPostgresql from "../public/static/img/stack/postgresql.png";
 import { SiTypescript } from "react-icons/si";
 import { SiVite } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
