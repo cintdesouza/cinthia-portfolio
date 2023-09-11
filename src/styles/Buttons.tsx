@@ -23,10 +23,19 @@ export const Button = styled('button', {
             btLink: {
                 background: "transparent",
                 borderColor: "transparent",
+                "&:hover": {
+                    color: "$grey5",
+                }
+            },
+            projectLink: {
+                "&:hover": {
+                    backgroundColor: "$grey5",
+                    borderColor: "$grey5",
+                }
             },
             primary: {
-                background: "$brand1",
-                borderColor: "$brand1",
+                background: "black",
+                borderColor: "black",
                 color: "$whiteFixed",
                 "&:hover": {
                     backgroundColor: "$brand2",
@@ -34,10 +43,11 @@ export const Button = styled('button', {
                 }
             },
             icon: {
-                borderColor: "$grey5",
-                backgroundColor: "transparent",
+                borderColor: "white",
+                backgroundColor: "white",
                 "&:hover": {
                     backgroundColor: "$grey5",
+                    borderColor: "$grey5",
                 }
             },
             circle: {

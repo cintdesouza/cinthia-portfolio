@@ -31,19 +31,22 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+            <Text as="h1" type="heading1" color="brand1">
+              Cínthia de Souza{" "}
             </Text>
-            <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+            <Text type="body1">
+            Sou Desenvolvedora Full Stack com foco em Front End, desenvolvi projetos voltados a sites responsivos para áreas de financeiro, 
+            E-Commerce e redes sociais, e com isso adquiri habilidades em programação. Além de uso contínuo de metodologias ágeis SCRUM e 
+            Kanban para organização de tarefas e funções em equipe. Tenho também domínio da língua inglesa em nível técnico.<br /><br />
+
+            Possuo experiência em controle de versão de projetos com Git, estilização de sites e criação de designs com uso de Figma, 
+            e familiaridade com SQL, PostgreSQL, Express, Python e programação assíncrona.
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" href="#projetos">
+              <Button as="a" type="projectLink" href="#projetos">
                 Projetos
               </Button>
-              <Button as="a" href="#tecnologias" type="btLink" color="grey5">
+              <Button as="a" href="#tecnologias" type="btLink" color="brand1">
                 Tecnologias
               </Button>
             </HeaderButtonsArea>
@@ -70,9 +73,9 @@ export const Home = (): JSX.Element => {
                 Vamos trocar uma ideia?
               </Text>
               <Text as="p" type="body1" color="grey2">
-                No linkedIn sempre estou compartilhando meus processos diários
-                para desenvolver esses projetos e estou disposto a trocar
-                algumas ideias por lá
+                Estou sempre online no linkedIn para me conectar com outros
+                desenvolvedores, receber insights sobre tecnologia e compartilhar
+                meus processos de desenvolvimento de projetos. Vamos entrar em contato!
               </Text>
               <Button
                 type="primary"
@@ -88,11 +91,11 @@ export const Home = (): JSX.Element => {
                 Projetos
               </Text>
               <Text as="h3" type="heading2" color="grey1">
-                Originalidade e{" "}
-                <Text as="span" color="brand1" type="heading2">
-                  dedicação
-                </Text>{" "}
-                em cada detalhe
+                Dedicação para encontrar{" "}
+                <Text as="span" type="heading2">
+                  soluções
+                </Text>
+                !
               </Text>
               <Project />
             </ProjectsAreaContent>

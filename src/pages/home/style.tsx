@@ -2,16 +2,21 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 
-import img from "@/public/static/img/background/dots.svg";
+import img from "@/public/static/img/background/chizinha.png";
+import img2 from "@/public/static/img/background/chizinha2.png";
 
 export const Header = styled("header", {
-  backgroundColor: "$brand1",
+  backgroundColor: "$brand4",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${img})`,
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "bottom 1rem right 1rem",
+  backgroundPosition: "bottom 6rem right 24rem",
+  backgroundSize: "23%",
   "@mobile": {
+    backgroundImage: `url(${img2})`,
     padding: "9rem 0 6rem 0",
+    backgroundPosition: "bottom -16.7rem right -4.5rem",
+    backgroundSize: "100%",
   },
 });
 

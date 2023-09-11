@@ -1,5 +1,6 @@
 import { styled } from '@/styles/stitches.config';
 import { colors } from '@/styles/Global'
+import { keyframes } from '@stitches/react';
 
 const headingsDefaultConfig = {
     fontFamily: "$titles"
@@ -9,13 +10,27 @@ const bodyDefaultConfig = {
     fontFamily: "$texts"
 }
 
+const typing = keyframes({
+    "0%": {
+        width: "0%",
+        overflow: "hidden",
+        whiteSpace: "nowrap",
+    },
+    "70%": {
+        width: "100%",
+        whiteSpace: "nowrap",
+    }
+  });
+
 export const Text = styled("p", {
-    color: "$grey1",
+    color: "$brand2",
     fontSize: "$text1",
     fontWeight: 400,
     variants: {
         type: {
             heading1: {
+                animation: `${typing} 4s steps(35, end)`,
+                letterSpacing: ".10em",
                 fontSize: "$title1",
                 lineHeight: "$title1",
                 fontWeight: 700,
@@ -46,6 +61,7 @@ export const Text = styled("p", {
             body1: {
                 fontSize: "$text1",
                 lineHeight: "$text1",
+                textAlign: "justify",
                 ...bodyDefaultConfig
             },
             body2: {

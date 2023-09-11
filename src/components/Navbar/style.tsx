@@ -4,13 +4,14 @@ import { Button } from "../../styles/Buttons";
 
 export const Navbar = styled("nav", {
   background: "$mode",
-  borderBottom: "2px solid $grey4",
+  borderBottom: "2px solid $brand4",
   position: "fixed",
   inset: 0,
   bottom: "auto",
   padding: "1rem 0",
   width: "100%",
   zIndex: "99999",
+  backgroundColor: "$brand5",
 
   [`& ${Container}`]: {
     display: "flex",

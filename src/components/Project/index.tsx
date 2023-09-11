@@ -24,23 +24,43 @@ export const Project = (): JSX.Element => {
   const [repositories, setRepositories] = useState<ReposType[]>([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const data: Response = await fetch(
-        `https://api.github.com/users/${userData.githubUser}/repos`
-      )
-
-      const json = await data.json();
-
-      setRepositories(json);
-
-      if (!data.ok) {
-        throw data;
-      }
-
-      return json;
-    };
-    fetchData();
-  }, []);
+      setRepositories([{
+        id: 1,
+        name: "MyPet",
+        language: "TypeScript",
+        html_url: "https://github.com/mypet-project/mypet-ts",
+        description: "Projeto em grupo com objetivo de criar postagens sobre animais de estimação. A API foi construída pelos integrantes do projeto junto do design próprio.",
+        homepage: "https://mypet-ts-one.vercel.app/"},
+      {
+        id: 2,
+        name: "Burguer Kenzie",
+        language: "TypeScript",
+        html_url: "Indisponível",
+        description: "Aplicação realizada com possibilidade de criar conta, efetuar login e adicionar itens ao carrinho de forma dinâmica.",
+        homepage: "https://kenzieburguer-ts-cinthia.vercel.app/"},
+      {
+        id: 3,
+        name: "Kenzie Hub",
+        language: "TypeScript",
+        html_url: "Indisponível",
+        description: "Projeto organizado para criar usuário, fazer login e registrar suas tecnologias com organização conjunta a API.",
+        homepage: "https://kenzie-hub-cinthia.vercel.app/"},
+      {
+        id: 4,
+        name: "NuKenzie",
+        language: "TypeScript",
+        html_url: "Indisponível",
+        description: "Site com funcionalidade financeira para aplicar entrada e saída monetária do cliente.",
+        homepage: "https://react-nu-kenzie-cinthia.vercel.app/"},
+      {
+        id: 5,
+        name: "E-Commerce GeekshopK",
+        language: "Javascript",
+        html_url: "https://github.com/Kenzie-Academy-Brasil-Developers/m1-capstone-ecommerce-cinthia",
+        description: "Desenvolvimento de página de E-Commerce com estilização dinâmica e carrinho de compras funcional, com desenhos personalizados para cada elemento.",
+        homepage: "https://kenzie-academy-brasil-developers.github.io/m1-capstone-ecommerce-cinthia/"}]);
+  },
+   []);
 
   return (
     <>
@@ -70,9 +90,9 @@ export const Project = (): JSX.Element => {
             {repository.description}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.html_url}>
+            {repository.html_url == "Indisponível" ? undefined : <ProjectLink target="_blank" href={repository.html_url}>
               <FaGithub /> Github Code
-            </ProjectLink>
+            </ProjectLink>}
             {repository.homepage && (
               <ProjectLink target="_blank" href={repository.homepage}>
                 <FaShare /> Aplicação
