@@ -37,7 +37,7 @@ export const Home = (): JSX.Element => {
             <Text type="body1">
             Sou Desenvolvedora Full Stack com foco em Front End, desenvolvi projetos voltados a sites responsivos para áreas de financeiro, 
             E-Commerce e redes sociais, e com isso adquiri habilidades em programação. Além de uso contínuo de metodologias ágeis SCRUM e 
-            Kanban para organização de tarefas e funções em equipe. Tenho também domínio da língua inglesa em nível técnico.<br /><br />
+            Kanban para organização de tarefas e funções em equipe. Tenho também domínio da língua inglesa em nível intermediário.<br /><br />
 
             Possuo experiência em controle de versão de projetos com Git, estilização de sites e criação de designs com uso de Figma, 
             e familiaridade com SQL, PostgreSQL, Express, Python e programação assíncrona.
