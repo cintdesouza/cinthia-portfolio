@@ -1,5 +1,5 @@
 import imgStyled from "../public/static/img/stack/styled.png";
-import { SiTypescript } from "react-icons/si";
+import { SiAngular, SiTypescript } from "react-icons/si";
 import { SiVite } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
@@ -36,6 +36,7 @@ export const stackData = [
     img: SiReact,
   },
   { title: "Vite", img: SiVite },
+  { title: "Angular", img: SiAngular },
   { title: "Next.js", img: SiNextdotjs },
   { title: "TypeScript", img: SiTypescript },
   { title: "Python", img: SiPython },
